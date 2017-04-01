@@ -67,3 +67,5 @@ nnoremap gV `[v`]
 inoremap jk <esc>
 " toggle grundo ',u' is super undo
 nnoremap <leader>u :GrundoToggle<CR>
+
+" YEE
