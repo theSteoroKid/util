@@ -52,6 +52,11 @@ nnoremap <space><space> :nohlsearch<CR>
 "move vertically by visual line
 nnoremap j gj
 nnoremap k gk
+"move screen without cursor
+nnoremap <c-j> <c-e>
+nnoremap <c-k> <c-y>
+"remove the join function
+nnoremap <s-j> <nop>
 "move to the Beginning/End of line
 nnoremap B ^
 nnoremap E $
@@ -67,5 +72,16 @@ nnoremap gV `[v`]
 inoremap jk <esc>
 " toggle grundo ',u' is super undo
 nnoremap <leader>u :GrundoToggle<CR>
+"enter insert mode at the end of the line
+nnoremap NN A
 
-" YEE
+" split screen preferences
+" ctr-'dir' sets navigation
+nnoremap <C-Down> <C-W><C-J>
+nnoremap <C-Up> <C-W><C-K>
+nnoremap <C-Right> <C-W><C-L>
+nnoremap <C-Left> <C-W><C-H>
+
+" more natural split
+set splitbelow
+set splitright
